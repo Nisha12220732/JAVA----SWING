@@ -1,0 +1,43 @@
+package SwingLibrary;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Swingdemo {
+    public static void main(String[] args) {
+        ABC obj  = new ABC();
+
+    }
+}
+
+
+class ABC extends JFrame{
+    public ABC(){
+
+//        For changing the default layout from "Cards Layout" to "Flow Layout"
+//                CardsLayout - Only the last label written will be shown
+//                FlowLayout - All the labels are shown with center alignment
+        setLayout(new FlowLayout());
+
+//        JLabel is used to add static text and images 
+        JLabel l = new JLabel("Hello World");
+        JLabel l1 = new JLabel("Hello World2");
+        
+//        To make labels visible 
+        add(l);
+        add(l1);
+        
+//        To make the frame visible 
+        setVisible(true);
+        
+//        To set the size of the frame
+        setSize(600,600);
+        
+//      To add the exit botton   
+        
+//        setDefaultCloseOperation(3);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    }
+
+}
